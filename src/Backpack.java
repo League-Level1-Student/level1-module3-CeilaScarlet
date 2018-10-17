@@ -14,7 +14,17 @@ public class Backpack
 		// Your mission is to go to school.
 		// 1. First you need to put all your supplies into your backpack - use the putInBackpack(...) methods
 
-		goToSchool();
+		Backpack bp = new Backpack();
+		Pencil pl = new Pencil();
+		Textbook tb = new Textbook();
+		Ruler ru = new Ruler();
+		pl.write();
+		bp.putInBackpack(pl);
+		tb.read();
+		bp.putInBackpack(tb);
+		ru.measure();
+		bp.putInBackpack(ru);
+		bp.goToSchool();
 	}
 
 	public static void main(String[] args)
@@ -79,9 +89,9 @@ class Pencil extends Supply
 		System.out.println("You got your pencil!");
 	}
 
-	public void write(String writing)
+	public void write()
 	{
-		System.out.println(writing);
+		System.out.println("Now you can write boring essays...");
 	}
 }
 
