@@ -16,8 +16,11 @@ import javax.swing.SwingUtilities;
 
 import javazoom.jl.player.advanced.AdvancedPlayer;
 
-/* 1. Download the JavaZoom jar from here: http://bit.ly/javazoom
- * 2. Right click your project and add it as an External JAR (Under Java Build Path > Libraries).*/
+// 1. Download the JavaZoom jar from here: http://bit.ly/javazoom
+
+
+ 
+ // 2. Right click your project and add it as an External JAR (Under Java Build Path > Libraries).*/
 
 public class Jukebox implements Runnable {
 
@@ -28,6 +31,9 @@ public class Jukebox implements Runnable {
            public void run() {
 
 		// 3. Find an mp3 on your computer or on the Internet.
+        	   
+        	   Jukebox jb = new Jukebox();
+        	   
 		// 4. Create a Song
 
 		// 5. Play the Song
