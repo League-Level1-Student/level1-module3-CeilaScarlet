@@ -3,7 +3,7 @@
  *    Level 1
  */
 
-
+//Check out Recipes Regina!!!!!
 
 public class Movie implements Comparable<Movie> {
 	
@@ -36,7 +36,7 @@ public String getTicketPrice() {
 			return "Don't waste your money on this horrible rubbish.";
 		}
 	}
- 
+
 
 	public int compareTo(Movie otherMovie) {
 		int compareQuantity = otherMovie.getRating();
