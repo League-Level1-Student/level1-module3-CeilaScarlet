@@ -10,6 +10,7 @@
 /MagicBox.class
 /MediaPalace.class
 /Movie.class
+/MovieRunner.class
 /NetflixQueue.class
 /Pencil.class
 /Ruler.class
@@ -17,4 +18,4 @@
 /Song.class
 /Supply.class
 /Textbook.class
-/MovieRunner.class
+/Netflix.class
