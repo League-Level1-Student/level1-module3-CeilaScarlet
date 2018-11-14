@@ -31,6 +31,8 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 	 */
 	
 	
+	
+	
 
 	BufferedImage backgroundImage;
 
@@ -55,6 +57,7 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 	private void createUI() {
 		JFrame frame = new JFrame("The Magic Box contains many secrets...");
 		frame.add(this);
+		frame.addMouseListener(this);
 		setPreferredSize(new Dimension(backgroundImage.getWidth(), backgroundImage.getHeight()));
 		frame.pack();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -69,6 +72,7 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 			throw new Exception("Could not load image: " + imageFile);
 		}
 	}
+	
 
 	@Override
 	public void paintComponent(Graphics g) {
@@ -84,6 +88,15 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 	@Override
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
+		int x = e.getX();
+		int y = e.getY();
+		
+		if (y>=506 & y<=534) {
+			
+		if (x>=196 & x>=203) {
+			jpanel.loadImageFromWithinProject("WyD2.gif");
+		}	
+		}
 		
 	}
 
